@@ -28,6 +28,6 @@ This project is a server API for organizing and managing EA Sports FC championsh
 ## Running the app
 
 1. Inside the VS Code container, update your .env file by replacing all `localhost` occurrences with your machine's IP address.
-2. Run PostgreSQL and RabbitMQ with docker
-    - PostgreSQL: `docker run --name postgres -p 5432:5432 -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -d postgres`
+2. Start PostgreSQL using Docker
+    - `docker run --name postgres -p 5432:5432 -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -d postgres`
 3. Now, run `yarn start:dev` in your VS Code integrated terminal.
